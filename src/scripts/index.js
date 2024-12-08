@@ -108,9 +108,10 @@ $(function(){
                   var user = users.find(item => item.UserId==$("#LoginUserId").val());
                   if(user.UserId==$("#LoginUserId").val() && user.Password==$("#LoginPassword").val())
                   {
-                      //Create a Cookie and store user details in Cookie
-                      LoadVideos();
+                      
                       $("#signin").html(`${user.UserName} <button id="btnSignout" class="btn btn-warning">Signout</button>`)
+                      LoadPage('index.html');
+                      LoadVideos();
                   } else {
                       alert(`Invalid User Name or Password`);
                   }
@@ -120,7 +121,7 @@ $(function(){
 
      $(document).on("click", "#btnSignout", ()=>{
          location.reload();
-         //Delete Cookie and and navigate to login.
+         LoadPage('user-login.html');
      })
 
 })
