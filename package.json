@@ -1,4 +1,14 @@
 {
+  "name": "video-tutorial-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "api": "node .\\server\\api.js"
+  },"keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
@@ -6,6 +16,7 @@
     "express": "^4.21.2",
     "jquery": "^3.7.1",
     "jquery.cookie": "^1.4.1",
-    "mongodb": "^6.11.0"
+    "mongodb": "^6.11.0",
+    "nodejs": "^0.0.0"
   }
 }
